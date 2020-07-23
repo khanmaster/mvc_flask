@@ -19,13 +19,13 @@ app = Flask(__name__)
 def welcome_user():
     return render_template("index.html")
 
-# @app.route("/user/")
-# def welcome_user():
-# # login in functionality with GET,POST methods of HTTP
-# # import request to use the methods check status code
-# # add control flow to redirect the user accorinding to the status code received.
-#
-#     return render_template("index.html")
+@app.route("/user/")
+def welcome_user():
+# login in functionality with GET,POST methods of HTTP
+# import request to use the methods check status code
+# add control flow to redirect the user accorinding to the status code received.
+
+    return render_template("index.html")
 
 
 # index method will be called at the endpoint
